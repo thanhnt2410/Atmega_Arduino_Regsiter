@@ -1,0 +1,6 @@
+DDRA = 0b00000001 : Chan A0 output, chan A1 input
+PORTA = 0b00000001: Chan A0 xuat ra 5V
+PORTA &= ~(1 << (i)) set bit thứ i về 0. ví dụ PORTA &=(11101111)
+PORTA |=(1<<i) set bít thứ i từ 0 lên 1
+PORTA ^=(1<<i) đảo bit
+1<<PINB0 nghĩa là dịch bit 1 sang trái tới vị trí của chân PINB0. Nếu PINB0 là 0, kết quả sẽ là 0b00000001. Nếu PINB0 là 1, kết quả sẽ là 0b00000010, và tương tự cho các vị trí khác.
